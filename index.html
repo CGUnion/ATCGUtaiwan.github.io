@@ -142,12 +142,37 @@
 		<br><br><br><h5>strand 2: AACTACGGTAACATTGATCGCAACGTTCAATTT</h5><img src="strand2-1.png" style="max-width:350"><img src="strand2-2.png" style="max-width:350"></center>
 	</div>
 	<div id="Lab"      class="w3-animate-opacity page" style="display:none;margin:0 10%">            <div class="pt"></div>
-		<h1>Lab     </h1><center><img src="lab.png" usemap="#I02" style="max-width:900"></center>
+		<h1>Lab     </h1><img src="lab.png" usemap="#I02" style="max-width:900;margin:auto">
 		<map name="I02">
-			<area shape="circle" coords="240,100,100" href="Lab1.html">
-			<area shape="circle" coords="100,380,100" href="Lab2.html">
-			<area shape="circle" coords="775,380,125" href="Lab3.html">
+			<area shape="circle" na="1" coords="240,100,100" href="Lab1.html">
+			<area shape="circle" na="2" coords="100,380,100" href="Lab2.html">
+			<area shape="circle" na="3" coords="775,380,125" href="Lab3.html">
 		</map>
+		<script src="jquery.imagemapster.js"></script><script>
+			resizeTime = 100, resizeDelay = 100;
+			$('img').mapster({ mapKey: 'na'});
+			function resize(maxWidth,maxHeight) {
+				image = $('img'), newWidth = 0, newHeight = 0;
+				if (image.width()/maxWidth>image.height()/maxHeight) {
+					newWidth  = maxWidth;
+				} else {
+					newHeight = maxHeight;
+				}
+				image.mapster('resize',newWidth,newHeight,resizeTime);   
+			}
+			function onWindowResize() {
+				curWidth = $(window).width(), curHeight = $(window).height(), checking=false;
+				if (checking) {return;}
+				checking = true;
+				window.setTimeout(function() {
+					newWidth  = $(window).width(), newHeight = $(window).height();
+					if (newWidth === curWidth && newHeight === curHeight)
+						resize(newWidth,newHeight); 
+					checking = false;
+				},resizeDelay );
+			}
+			$(window).bind('resize',onWindowResize);
+		</script>
 	</div>
 	<div id="Team"     class="w3-animate-opacity page" style="display:none;margin:0 10%;height:150%"><div class="pt"></div><h1>Team    </h1></div>
 	<div id="Sponsors" class="w3-animate-opacity page" style="display:none;margin:0 10%;height:150%"><div class="pt"></div><h1>Sponsors</h1></div>
