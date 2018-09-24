@@ -141,23 +141,21 @@
 		<center><br><h5>strand 1: AAAATCGATGGTAAAGGTTGGCAAAAAGATAAA</h5><img src="strand1-1.png" style="max-width:350"><img src="strand1-2.png" style="max-width:350">
 		<br><br><br><h5>strand 2: AACTACGGTAACATTGATCGCAACGTTCAATTT</h5><img src="strand2-1.png" style="max-width:350"><img src="strand2-2.png" style="max-width:350"></center>
 	</div>
-	<div id="Lab"      class="w3-animate-opacity page" style="display:none;margin:0 10%">            <div class="pt"></div>
-		<h1>Lab     </h1><img src="lab.png" usemap="#I02" style="max-width:900;margin:auto">
-		<map name="I02">
+	<div id="Lab" class="w3-animate-opacity page" style="display:none;margin:0 10%"><div class="pt"></div>
+		<h1>Lab</h1><img src="lab.png" usemap="#I02" style="margin:auto"><map name="I02">
 			<area shape="circle" na="1" coords="240,100,100" href="Lab1.html">
 			<area shape="circle" na="2" coords="100,380,100" href="Lab2.html">
 			<area shape="circle" na="3" coords="775,380,125" href="Lab3.html">
 		</map>
+		<style>	#mapster_wrap_0 {margin: 0 auto;} </style>
 		<script src="jquery.imagemapster.js"></script><script>
 			resizeTime = 100, resizeDelay = 100;
 			$('img').mapster({ mapKey: 'na'});
 			function resize(maxWidth,maxHeight) {
 				image = $('img'), newWidth = 0, newHeight = 0;
-				if (image.width()/maxWidth>image.height()/maxHeight) {
+				if (image.width()/maxWidth>image.height()/maxHeight)
 					newWidth  = maxWidth;
-				} else {
-					newHeight = maxHeight;
-				}
+				else	newHeight = maxHeight;
 				image.mapster('resize',newWidth,newHeight,resizeTime);   
 			}
 			function onWindowResize() {
@@ -169,7 +167,7 @@
 					if (newWidth === curWidth && newHeight === curHeight)
 						resize(newWidth,newHeight); 
 					checking = false;
-				},resizeDelay );
+				},resizeDelay);
 			}
 			$(window).bind('resize',onWindowResize);
 		</script>
