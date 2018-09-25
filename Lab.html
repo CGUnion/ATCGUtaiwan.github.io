@@ -1,0 +1,61 @@
+<title> @CGU </title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel ="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link rel ="shortcut icon" href="logo.ico">
+<style>
+	h1,h2{text-transform: uppercase; font-weight: bold} h3{font-weight: bold} .cap{text-transform: uppercase}
+	hr {border-color:black; border-width: 5px;} .pt {padding-top: 50} img {width: 100%; margin: auto}
+	iframe {border:0;width:100%;height:100%} p {text-indent:38}
+</style>
+<div class="w3-top w3-show-inline-block w3-white w3-card" style="z-index:2">
+	<center>
+		<div class="w3-hide-small">
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Home.html"    >Home    </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Project.html" >Project </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Design.html"  >Design  </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Lab.html"     >Lab     </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Team.html"    >Team    </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Sponsors.html">Sponsors</a>
+		</div>
+	</center>
+	<div class="w3-hide-large w3-hide-medium">
+		<a href="Home.html" class="w3-bar-item w3-button w3-large w3-pale-red">Home</a>
+		<div class="w3-right w3-dropdown-click">
+			<a href="#" onclick="Acc('dc1')" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
+			<div id="dc1" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+				<a href="#" onclick="Acc('dc2')" class="w3-bar-item w3-button w3-medium cap">Project</a>
+				<div id="dc2" class="w3-hide w3-light-grey">
+					<a href="Project.html#Background" onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Background</a>
+					<a href="Project.html#Problem   " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Problem   </a>
+					<a href="Project.html#Goal      " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Goal      </a>
+					<a href="Project.html#Future    " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Future    </a></div>
+				<a href="Design.html"   class="w3-bar-item menu w3-button w3-medium cap">Design  </a>
+				<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
+				<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
+				<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="Project" class="w3-animate-opacity page" style="margin:0 10%">
+	<div class="w3-col l2 m3 w3-card-4 w3-sidebar w3-bar-block w3-hide-small w3-animate-zoom w3-center" style="top:80;height:80vh">
+		<img class="w3-image w3-padding" src="logo.ico">
+		<h1>Lab</h1>
+		<a href="#Background" class="w3-bar-item menu w3-button w3-medium cap">Background</a>
+		<a href="#Problem"    class="w3-bar-item menu w3-button w3-medium cap">Problem   </a>
+		<a href="#Goal"       class="w3-bar-item menu w3-button w3-medium cap">Goal      </a>
+		<a href="#Future"     class="w3-bar-item menu w3-button w3-medium cap">Future    </a>
+	</div>
+	<div class="w3-col l9 m7 s12 w3-right">
+		<div class="pt" id="Background"></div>			
+		<h2>Background</h2><hr>
+		<p>Deoxyribonucleic acid (DNA) is a double-helical macromolecule. With two sugar-phosphate backbones on the outside, it comprised of repeated stacks of either adenine (A)–thymine (T) or (G)–cytosine (C) base pairs, coupled by hydrogen bonds(Watson–Crick model).</p>
+		<img src="atgc.png">
+		<p>DNA is the carrier of genetic information and the foundation material of biological heredity. Besides, sequence-specific DNA, which are distinct in any living organism, virus or pathogen, can be detected based on the hybridization with its complementary strand. DNA possesses complementarity, self-assembling and self-recognition ability that always forms hydrogen-bonded base pairs where the base pairs line up one-dimension-ally at 0.34–0.36 nm intervals.</p>
+		<p>A key structural feature, which makes DNA a promising candidate for applications in nanometer-scale electronics, is the array of π-stacked base pairs. As a functional nano-size material, DNA possesses properties of both nano-scale templates and molecular wires. Taking advantage of properties of DNA and integrating them with current semiconductor technology could lead to the development of nano-scale electronic devices, including biosensor.</p>
+		<img src="biosensor.png">
+		<p>Coupling a biological recognition element that interacts with the target analyte and a transduction element, DNA biosensors are used to obtain DNA sequence specific information. In other words, it have wide range of application including DNA based diagnosis and pathogen detection. Electrochemical DNA-based biosensors have been widely developed due to the remarkable advantages of easy operation, rapid response, less power requirement, miniaturized platform and low cost. DNA-electrochemical biosensor is formed by an electrode (the electrochemical transducer) with a DNA probe (the biological recognition element) immobilized on its surface and is used to detect DNA-binding molecules (the analyte).</p>			
+		</div>
+</div>
+<script src="jq.js"></script><script>
+	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
+	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
+</script>
