@@ -191,7 +191,7 @@
 $(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
 Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
 opL=(a)=>{lg.style.width = a === 'Home' ? 500 : 0;
-	x = document.getElementsByClassName("page"); for(i = 0; i < x.length; i++) x[i].style.display = "none"; color =" w3-pale-red";
-	x = document.getElementsByClassName("menu"); for(i = 0; i < x.length; i++) x[i].className = x[i].className.replace(color, "");
-	    document.getElementById(a).style.display = "block"; event.currentTarget.className += color;}
+		  x = document.getElementsByClassName("page"); for(i = 0; i < x.length; i++) x[i].style.display = "none"; color =" w3-pale-red";
+		  x = document.getElementsByClassName("menu"); for(i = 0; i < x.length; i++) x[i].className = x[i].className.replace(color, "");
+		  document.getElementById(a).style.display = "block"; event.currentTarget.className += color;}
 </script>
