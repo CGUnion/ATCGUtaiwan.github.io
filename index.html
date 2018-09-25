@@ -142,32 +142,45 @@
 		<br><br><br><h5>strand 2: AACTACGGTAACATTGATCGCAACGTTCAATTT</h5><img src="strand2-1.png" style="max-width:350"><img src="strand2-2.png" style="max-width:350"></center>
 	</div>
 	<div id="Lab" class="w3-animate-opacity page" style="display:none"><div class="pt"></div>
-		<h1 style="left:10%">Lab</h1><img src="lab.png" usemap="#I02" style="width:500px;height:280px;margin:auto">
-		<map name="I02">
+		<h1   style="margin:0 10%">Lab</h1><img src="lab.png" usemap="#I02" style="width:500px;height:280px;margin:auto">
+		<map   name="I02">
 			<area shape="circle" na="1" coords= "425,175,175" href="Lab1.html">
 			<area shape="circle" na="2" coords= "175,675,175" href="Lab2.html">
 			<area shape="circle" na="3" coords="1370,675,220" href="Lab3.html">
 		</map>
 		<style> #mapster_wrap_0 {margin: 0 auto;}</style>
 		<script src="jquery.imagemapster.js"></script><script>
-			resizeTime = 100, resizeDelay = 100;
-			$('img').mapster({mapKey: 'na'});
-			resize=(maxWidth,maxHeight)=>{
-				image =  $('img'),newWidth=0,newHeight=0;
-				if (image.width()/maxWidth>image.height()/maxHeight) newWidth = maxWidth; else newHeight = maxHeight;
-				image.mapster('resize',newWidth,newHeight,resizeTime);
+		var resizeTime  = 100;
+		var resizeDelay = 100; 
+		$('img').mapster({mapKey: 'na'});
+		function resize(maxWidth,maxHeight) {
+			var image     = $('img'),
+			    imgWidth  = image.width(),
+			    imgHeight = image.height(),
+			    newWidth  = 0,
+			    newHeight = 0;
+			if (imgWidth/maxWidth>imgHeight/maxHeight) {
+				newWidth = maxWidth;
+			} else {
+				newHeight = maxHeight;
 			}
-			onWindowResize=()=>{
-				curWidth  = $(window).width(), curHeight = $(window).height(), checking = false;
-				checking  = checking ? false: true;
-				window.setTimeout(()=>{
-					newWidth = $(window).width(), newHeight = $(window).height();
-					if (newWidth === curWidth && newHeight === curHeight)
-						resize(newWidth,newHeight);
-					checking = false;
-				},resizeDelay);
-			}
-			$(window).bind('resize',onWindowResize);
+			image.mapster('resize',newWidth,newHeight,resizeTime);   
+		}
+		function onWindowResize() {
+			var curWidth = $(window).width(),
+			    curHeight = $(window).height(),
+			    checking=false;
+			if (checking) return;
+			checking = true;
+			window.setTimeout(function() {
+				var newWidth = $(window).width(),
+				    newHeight = $(window).height();
+				if (newWidth === curWidth && newHeight === curHeight)
+					resize(newWidth,newHeight);
+				checking=false;
+			},resizeDelay );
+		}
+		$(window).bind('resize',onWindowResize);
 		</script>
 	</div>
 	<div id="Team"     class="w3-animate-opacity page" style="display:none;margin:0 10%;height:150%"><div class="pt"></div><h1>Team    </h1></div>
@@ -177,7 +190,7 @@
 <script>
 $(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
 Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
-function opL(a){lg.style.width = a == 'Home' ? 500 : 0;
+opL=(a)=>{lg.style.width = a === 'Home' ? 500 : 0;
 	x = document.getElementsByClassName("page"); for(i = 0; i < x.length; i++) x[i].style.display = "none"; color =" w3-pale-red";
 	x = document.getElementsByClassName("menu"); for(i = 0; i < x.length; i++) x[i].className = x[i].className.replace(color, "");
 	    document.getElementById(a).style.display = "block"; event.currentTarget.className += color;}
