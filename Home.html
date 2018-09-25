@@ -1,1 +1,49 @@
-
+<title> @CGU </title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel ="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link rel ="shortcut icon" href="logo.ico">
+<style>
+	h1,h2{text-transform: uppercase; font-weight: bold} h3{font-weight: bold} .cap{text-transform: uppercase}
+	hr {border-color:black; border-width: 5px;} .pt {padding-top: 50} img {width: 100%; margin: auto}
+	iframe {border:0;width:100%;height:100%} p {text-indent:38}
+</style>
+<div class="w3-top w3-show-inline-block w3-white w3-card" style="z-index:2">
+	<center>
+		<div class="w3-hide-small">
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Home.html"    >Home    </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Project.html" >Project </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Design.html"  >Design  </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Lab.html"     >Lab     </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Team.html"    >Team    </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Sponsors.html">Sponsors</a>
+		</div>
+	</center>
+	<div class="w3-hide-large w3-hide-medium">
+		<a href="Home.html" class="w3-bar-item w3-button w3-large w3-pale-red">Home</a>
+		<div class="w3-right w3-dropdown-click">
+			<a href="#" onclick="Acc('dc1')" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
+			<div id="dc1" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+				<a href="#" onclick="Acc('dc2')" class="w3-bar-item w3-button w3-medium cap">Project</a>
+				<div id="dc2" class="w3-hide w3-light-grey">
+					<a href="Project.html#Background" class="w3-bar-item menu w3-button cap">Background</a>
+					<a href="Project.html#Problem   " class="w3-bar-item menu w3-button cap">Problem   </a>
+					<a href="Project.html#Goal      " class="w3-bar-item menu w3-button cap">Goal      </a>
+					<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future    </a></div>
+				<a href="Design.html"   class="w3-bar-item menu w3-button w3-medium cap">Design  </a>
+				<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
+				<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
+				<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="Home" class="w3-animate-opacity page" style="margin:0 10%">
+		<img class="w3-image" src="intro.gif" style="width:100%;padding-top:120">
+		<h1>Abstract</h1>
+		<p>In recent years, the problem of drug resistance genes caused by antibiotic abuse has become more and more serious, and it is more likely to extend the super-strong drug-resistant bacteria. In order to suppress this situation, we have designed a detector that can quickly identify drug resistance genes, <b>"bri<font color="red">D</font>ge a<font color="red">N</font> er<font color="red">A</font>"</b>.</p>
+		<p><b>"bri<font color="red">D</font>ge a<font color="red">N</font> er<font color="red">A</font>"</b> uses a specific conductive material to make two electrodes. First, using the complementary characteristics of DNA, two different probes can be designed for drug resistance genes, and the probes are respectively connected to the electrodes on both sides.</p>
+		<p>Second, the characteristics of DNA conduction are used as connected bridges, simply use the measurement of electrical changes, so that not only can quickly detect long-segment DNA, but also can detect multiple gene fragments in parallel to increase the accuracy of drug administration and slow down more drug resistance.</p>
+		<h1>Video</h1><div style="position:relative;padding-bottom:56.25%;padding-top:25px;height:0"><iframe allowfullscreen src="https://www.youtube.com/embed/zcju6ixZGtg" style="top:0;left:0;position:absolute"></iframe></div>
+	</div>
+<script src="jq.js"></script><script>
+	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
+	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
+</script>
