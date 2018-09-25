@@ -39,17 +39,17 @@
 	<div class="w3-col l2 m3 w3-card-4 w3-sidebar w3-bar-block w3-hide-small w3-animate-zoom w3-center" style="top:80;height:80vh">
 		<img class="w3-image w3-padding" src="logo.ico">
 		<h1>Lab</h1>
-		<a href="#分生"   class="w3-bar-item menu w3-button w3-medium cap">分生</a>
-		<a href="#半導體" class="w3-bar-item menu w3-button w3-medium cap">半導體</a>
-		<a href="#檢測"   class="w3-bar-item menu w3-button w3-medium cap">檢測</a>
+		<a onclick="n1.style.display='block'" class="w3-bar-item menu w3-button w3-medium cap">分生　</a>
+		<a onclick="n2.style.display='block'" class="w3-bar-item menu w3-button w3-medium cap">半導體</a>
+		<a onclick="n3.style.display='block'" class="w3-bar-item menu w3-button w3-medium cap">檢測　</a>
 	</div>
 	<div class="w3-col l9 m7 s12 w3-right">
 		<div style="height:150"></div>
 		<img src="lab.png" usemap="#I02" style="width:800px;height:448px;margin:auto">
-		<map   name="I02">
-			<area shape="circle" na="1" coords= "212,88,100" href="Lab1.html">
-			<area shape="circle" na="2" coords= "89,335,100" href="Lab2.html">
-			<area shape="circle" na="3" coords="687,335,123" href="Lab3.html">
+		<map name="I02">
+			<area shape="circle" na="1" coords= "212,88,100" onclick="n1.style.display='block'">
+			<area shape="circle" na="2" coords= "89,335,100" onclick="n2.style.display='block'">
+			<area shape="circle" na="3" coords="687,335,123" onclick="n3.style.display='block'">
 		</map>
 		<style> #mapster_wrap_0 {margin: 0 auto;}</style>
 		<script src="jquery.imagemapster.js"></script><script>
@@ -82,6 +82,34 @@
 		}
 		$(window).bind('resize',onWindowResize);
 		</script>
+		
+		<div id="n1" class="w3-modal w3-animate-opacity">
+			<div class="w3-modal-content">
+				<div class="w3-container">
+					<span onclick="n1.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+					<p>Some text. Some text. Some text.1</p>
+					<p>Some text. Some text. Some text.1</p>
+				</div>
+			</div>
+		</div>
+		<div id="n2" class="w3-modal w3-animate-opacity">
+			<div class="w3-modal-content">
+				<div class="w3-container">
+					<span onclick="n1.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+					<p>Some text. Some text. Some text.2</p>
+					<p>Some text. Some text. Some text.2</p>
+				</div>
+			</div>
+		</div>
+		<div id="n3" class="w3-modal w3-animate-opacity">
+			<div class="w3-modal-content">
+				<div class="w3-container">
+					<span onclick="n1.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+					<p>Some text. Some text. Some text.3</p>
+					<p>Some text. Some text. Some text.3</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <script src="jq.js"></script><script>
