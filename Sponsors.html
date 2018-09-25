@@ -1,34 +1,34 @@
-<title> @CGU </title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="jq.js"></script><link rel ="stylesheet"    href="https://www.w3schools.com/w3css/4/w3.css"><link rel ="shortcut icon" href="logo.ico">
+<title> @CGU </title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel ="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link rel ="shortcut icon" href="logo.ico">
 <style> h1,h2{text-transform: uppercase; font-weight: bold} h3{font-weight: bold} .cap{text-transform: uppercase}
 	hr {border-color:black; border-width: 5px;} .pt {padding-top: 50} img {width: 100%; margin: auto} iframe {border:0;width:100%;height:100%} p {text-indent:38}</style>
 <div class="w3-top w3-show-inline-block w3-white w3-card" style="z-index:2">
 	<center>
-		<img id="lg" src="website_1_FIX.png" style="max-width:300">
 		<div class="w3-hide-small">
-			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="#Home"     onclick="opL('Home')"    >Home    </a>
-			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="#Project"  onclick="opL('Project')" >Project </a>
-			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="#Design"   onclick="opL('Design')"  >Design  </a>
-			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="#Lab"      onclick="opL('Lab')"     >Lab     </a>
-			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="#Team"     onclick="opL('Team')"    >Team    </a>
-			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="#Sponsors" onclick="opL('Sponsors')">Sponsors</a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Home.html"    >Home    </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Project.html" >Project </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Design.html"  >Design  </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Lab.html"     >Lab     </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Team.html"    >Team    </a>
+			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap" href="Sponsors.html">Sponsors</a>
 		</div>
 	</center>
 	<div class="w3-hide-large w3-hide-medium">
 		<a href="#Home" onclick="opL('Home')" class="w3-bar-item w3-button w3-large w3-pale-red">Home</a>
 		<div class="w3-right w3-dropdown-click">
-			<a href="#" onclick="Acc('dc1')" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
+			<a href="Home.html" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
 			<div id="dc1" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
-				<a href="#Project" onclick="Acc('dc2')" class="w3-bar-item w3-button w3-medium cap">Project</a>
+				<a href="#" onclick="Acc('dc2')" class="w3-bar-item w3-button w3-medium cap">Project</a>
 				<div id="dc2" class="w3-hide w3-light-grey">
-					<a href="#Background" onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Background</a>
-					<a href="#Problem   " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Problem   </a>
-					<a href="#Goal      " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Goal      </a>
-					<a href="#Future    " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Future    </a></div>
-				<a href="#Design  " onclick="opL('Design')"   class="w3-bar-item menu w3-button w3-medium cap">Design  </a>
-				<a href="#Lab     " onclick="opL('Lab')"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
-				<a href="#Team    " onclick="opL('Team')"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
-				<a href="#Sponsors" onclick="opL('Sponsors')" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
+					<a href="Project.html#Background" onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Background</a>
+					<a href="Project.html#Problem   " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Problem   </a>
+					<a href="Project.html#Goal      " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Goal      </a>
+					<a href="Project.html#Future    " onclick="opL('Project')" class="w3-bar-item menu w3-button cap">Future    </a></div>
+				<a href="Design.html"   class="w3-bar-item menu w3-button w3-medium cap">Design  </a>
+				<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
+				<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
+				<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
 			</div>
 		</div>
 	</div>
 </div>
+<script src="jq.js"></script><script>Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}</script>
