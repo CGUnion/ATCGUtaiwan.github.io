@@ -142,7 +142,7 @@
 		<br><br><br><h5>strand 2: AACTACGGTAACATTGATCGCAACGTTCAATTT</h5><img src="strand2-1.png" style="max-width:350"><img src="strand2-2.png" style="max-width:350"></center>
 	</div>
 	<div id="Lab" class="w3-animate-opacity page" style="display:none;margin:0 10%"><div class="pt"></div>
-		<h1>Lab</h1><img src="https://atcgutaiwan.github.io/lab.png" usemap="#I02" style="width:500px;height:280px;margin:auto">
+		<h1>Lab</h1><img src="lab.png" usemap="#I02" style="width:500px;height:280px;margin:auto">
 		<map name="I02">
 			<area shape="circle" na="1" coords= "425,175,175" href="Lab1.html">
 			<area shape="circle" na="2" coords= "175,675,175" href="Lab2.html">
@@ -158,14 +158,13 @@
 				image.mapster('resize',newWidth,newHeight,resizeTime);
 			}
 			onWindowResize=()=>{
-				curWidth  = $(window).width(),curHeight = $(window).height(),checking  = false;
+				curWidth  = $(window).width(), curHeight = $(window).height(), checking = false;
 				checking  = checking ? false: true;
 				window.setTimeout(()=>{
-					var newWidth = $(window).width(),
-					    newHeight = $(window).height();
+					newWidth = $(window).width(), newHeight = $(window).height();
 					if (newWidth === curWidth && newHeight === curHeight)
 						resize(newWidth,newHeight);
-					checking=false;
+					checking = false;
 				},resizeDelay);
 			}
 			$(window).bind('resize',onWindowResize);
