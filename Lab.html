@@ -45,15 +45,45 @@
 		<a href="#Future"     class="w3-bar-item menu w3-button w3-medium cap">Future    </a>
 	</div>
 	<div class="w3-col l9 m7 s12 w3-right">
-		<div class="pt" id="Background"></div>			
-		<h2>Background</h2><hr>
-		<p>Deoxyribonucleic acid (DNA) is a double-helical macromolecule. With two sugar-phosphate backbones on the outside, it comprised of repeated stacks of either adenine (A)–thymine (T) or (G)–cytosine (C) base pairs, coupled by hydrogen bonds(Watson–Crick model).</p>
-		<img src="atgc.png">
-		<p>DNA is the carrier of genetic information and the foundation material of biological heredity. Besides, sequence-specific DNA, which are distinct in any living organism, virus or pathogen, can be detected based on the hybridization with its complementary strand. DNA possesses complementarity, self-assembling and self-recognition ability that always forms hydrogen-bonded base pairs where the base pairs line up one-dimension-ally at 0.34–0.36 nm intervals.</p>
-		<p>A key structural feature, which makes DNA a promising candidate for applications in nanometer-scale electronics, is the array of π-stacked base pairs. As a functional nano-size material, DNA possesses properties of both nano-scale templates and molecular wires. Taking advantage of properties of DNA and integrating them with current semiconductor technology could lead to the development of nano-scale electronic devices, including biosensor.</p>
-		<img src="biosensor.png">
-		<p>Coupling a biological recognition element that interacts with the target analyte and a transduction element, DNA biosensors are used to obtain DNA sequence specific information. In other words, it have wide range of application including DNA based diagnosis and pathogen detection. Electrochemical DNA-based biosensors have been widely developed due to the remarkable advantages of easy operation, rapid response, less power requirement, miniaturized platform and low cost. DNA-electrochemical biosensor is formed by an electrode (the electrochemical transducer) with a DNA probe (the biological recognition element) immobilized on its surface and is used to detect DNA-binding molecules (the analyte).</p>			
-		</div>
+		<div class="pt"></div>
+		<img src="lab.png" usemap="#I02" style="width:1000px;height:560px;margin:auto">
+		<map   name="I02">
+			<area shape="circle" na="1" coords= "425,175,175" href="Lab1.html">
+			<area shape="circle" na="2" coords= "175,675,175" href="Lab2.html">
+			<area shape="circle" na="3" coords="1370,675,220" href="Lab3.html">
+		</map>
+		<style> #mapster_wrap_0 {margin: 0 auto;}</style>
+		<script src="jquery.imagemapster.js"></script><script>
+		var resizeTime  = 100, resizeDelay = 100; 
+		$('img').mapster({mapKey: 'na', clickNavigate: true});
+		function resize(maxWidth,maxHeight) {
+			var image     = $('img'),
+			    imgWidth  = image.width(),
+			    imgHeight = image.height(),
+			    newWidth  = 0,
+			    newHeight = 0;
+			if (imgWidth/maxWidth>imgHeight/maxHeight)
+				newWidth  = maxWidth;
+			else	newHeight = maxHeight;
+			image.mapster('resize',newWidth,newHeight,resizeTime);   
+		}
+		function onWindowResize() {
+			var curWidth = $(window).width(),
+			    curHeight = $(window).height(),
+			    checking=false;
+			if (checking) return;
+			checking = true;
+			window.setTimeout(function() {
+				var newWidth = $(window).width(),
+				    newHeight = $(window).height();
+				if (newWidth === curWidth && newHeight === curHeight)
+					resize(newWidth,newHeight);
+				checking=false;
+			},resizeDelay );
+		}
+		$(window).bind('resize',onWindowResize);
+		</script>
+	</div>
 </div>
 <script src="jq.js"></script><script>
 	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
