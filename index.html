@@ -150,20 +150,17 @@
 		</map>
 		<style> #mapster_wrap_0 {margin: 0 auto;}</style>
 		<script src="jquery.imagemapster.js"></script><script>
-		var resizeTime  = 100;
-		var resizeDelay = 100; 
-		$('img').mapster({mapKey: 'na'});
+		var resizeTime  = 100, resizeDelay = 100; 
+		$('img').mapster({mapKey: 'na', clickNavigate: true});
 		function resize(maxWidth,maxHeight) {
 			var image     = $('img'),
 			    imgWidth  = image.width(),
 			    imgHeight = image.height(),
 			    newWidth  = 0,
 			    newHeight = 0;
-			if (imgWidth/maxWidth>imgHeight/maxHeight) {
-				newWidth = maxWidth;
-			} else {
-				newHeight = maxHeight;
-			}
+			if (imgWidth/maxWidth>imgHeight/maxHeight)
+				newWidth  = maxWidth;
+			else	newHeight = maxHeight;
 			image.mapster('resize',newWidth,newHeight,resizeTime);   
 		}
 		function onWindowResize() {
