@@ -26,8 +26,13 @@
 					<a href="Project.html#Background" class="w3-bar-item menu w3-button cap">Background</a>
 					<a href="Project.html#Problem   " class="w3-bar-item menu w3-button cap">Problem   </a>
 					<a href="Project.html#Goal      " class="w3-bar-item menu w3-button cap">Goal      </a>
-					<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future    </a></div>
-				<a href="Design.html"   class="w3-bar-item menu w3-button w3-medium cap">Design  </a>
+					<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future    </a></div>		
+				<a href="#" onclick="Acc('dc3')" class="w3-bar-item w3-button w3-medium cap">Design</a>
+				<div id="dc3" class="w3-hide w3-light-grey">
+					<a href="Design.html#Idea"   class="w3-bar-item menu w3-button cap">Idea</a>
+					<a href="Design.html#Design" class="w3-bar-item menu w3-button cap">Design</a>
+					<a href="Design.html#半導體" class="w3-bar-item menu w3-button cap">半導體</a>
+					<a href="Design.html#分生"   class="w3-bar-item menu w3-button cap">分生</a></div>
 				<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
 				<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
 				<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
@@ -36,13 +41,14 @@
 	</div>
 </div>
 <div id="Home" class="w3-animate-opacity page" style="margin:0 10%">
-		<img class="w3-image" src="intro.gif" style="width:100%;padding-top:100">
-		<h1>Abstract</h1>
-		<p>In recent years, the problem of drug resistance genes caused by antibiotic abuse has become more and more serious, and it is more likely to extend the super-strong drug-resistant bacteria. In order to suppress this situation, we have designed a detector that can quickly identify drug resistance genes, <b>"bri<font color="red">D</font>ge a<font color="red">N</font> er<font color="red">A</font>"</b>.</p>
-		<p><b>"bri<font color="red">D</font>ge a<font color="red">N</font> er<font color="red">A</font>"</b> uses a specific conductive material to make two electrodes. First, using the complementary characteristics of DNA, two different probes can be designed for drug resistance genes, and the probes are respectively connected to the electrodes on both sides.</p>
-		<p>Second, the characteristics of DNA conduction are used as connected bridges, simply use the measurement of electrical changes, so that not only can quickly detect long-segment DNA, but also can detect multiple gene fragments in parallel to increase the accuracy of drug administration and slow down more drug resistance.</p>
-		<h1>Video</h1><div style="position:relative;padding-bottom:56.25%;padding-top:25px;height:0"><iframe allowfullscreen src="https://www.youtube.com/embed/zcju6ixZGtg" style="top:0;left:0;position:absolute"></iframe></div>
-	</div>
+	<img class="w3-image" src="intro.gif" style="width:100%;padding-top:100">
+	<h1>Abstract</h1>
+	<p>In recent years, the problem of drug resistance genes caused by antibiotic abuse has become more and more serious, and it is more likely to extend the super-strong drug-resistant bacteria. In order to suppress this situation, we have designed a detector that can quickly identify drug resistance genes, <b>"bri<font color="red">D</font>ge a<font color="red">N</font> er<font color="red">A</font>"</b>.</p>
+	<p><b>"bri<font color="red">D</font>ge a<font color="red">N</font> er<font color="red">A</font>"</b> uses a specific conductive material to make two electrodes. First, using the complementary characteristics of DNA, two different probes can be designed for drug resistance genes, and the probes are respectively connected to the electrodes on both sides.</p>
+	<p>Second, the characteristics of DNA conduction are used as connected bridges, simply use the measurement of electrical changes, so that not only can quickly detect long-segment DNA, but also can detect multiple gene fragments in parallel to increase the accuracy of drug administration and slow down more drug resistance.</p>
+	<h1>Video</h1>
+	<video width="100%" controls><source src="https://ATCGUtaiwan.github.io/0926 biomod present.mp4">Your browser does not support HTML5 video.</video>
+</div>
 <script src="jq.js"></script><script>
 	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
 	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
