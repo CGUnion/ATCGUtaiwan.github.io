@@ -27,7 +27,12 @@
 					<a href="Project.html#Problem   " class="w3-bar-item menu w3-button cap">Problem   </a>
 					<a href="Project.html#Goal      " class="w3-bar-item menu w3-button cap">Goal      </a>
 					<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future    </a></div>
-				<a href="Design.html"   class="w3-bar-item menu w3-button w3-medium cap">Design  </a>
+				<a href="#" onclick="Acc('dc3')" class="w3-bar-item w3-button w3-medium cap">Design</a>
+				<div id="dc3" class="w3-hide w3-light-grey">
+					<a href="Design.html#Idea"   class="w3-bar-item menu w3-button cap">Idea</a>
+					<a href="Design.html#Design" class="w3-bar-item menu w3-button cap">Design</a>
+					<a href="Design.html#半導體" class="w3-bar-item menu w3-button cap">半導體</a>
+					<a href="Design.html#分生"   class="w3-bar-item menu w3-button cap">分生</a></div>
 				<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
 				<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
 				<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
@@ -109,4 +114,3 @@
 	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
 	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
 </script>
-<div class="w3-center w3-padding" style="color:#dac2c2;background-color:#464646"> © Copyright 2018 @CGU </div>
