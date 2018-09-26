@@ -13,17 +13,22 @@
 		</div>
 	</center>
 	<div class="w3-hide-large w3-hide-medium">
-		<a href="#Home" onclick="opL('Home')" class="w3-bar-item w3-button w3-large w3-pale-red">Home</a>
+		<a href="Home.html" class="w3-bar-item w3-button w3-large w3-pale-red">Home</a>
 		<div class="w3-right w3-dropdown-click">
-			<a href="Home.html" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
+			<a href="#" onclick="Acc('dc1')" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
 			<div id="dc1" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
 				<a href="#" onclick="Acc('dc2')" class="w3-bar-item w3-button w3-medium cap">Project</a>
 				<div id="dc2" class="w3-hide w3-light-grey">
 					<a href="Project.html#Background" class="w3-bar-item menu w3-button cap">Background</a>
 					<a href="Project.html#Problem   " class="w3-bar-item menu w3-button cap">Problem   </a>
 					<a href="Project.html#Goal      " class="w3-bar-item menu w3-button cap">Goal      </a>
-					<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future    </a></div>
-				<a href="Design.html"   class="w3-bar-item menu w3-button w3-medium cap">Design  </a>
+					<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future    </a></div>		
+				<a href="#" onclick="Acc('dc3')" class="w3-bar-item w3-button w3-medium cap">Design</a>
+				<div id="dc3" class="w3-hide w3-light-grey">
+					<a href="Design.html#Idea"             class="w3-bar-item menu w3-button cap">Idea</a>
+					<a href="Design.html#Design"           class="w3-bar-item menu w3-button cap">Design</a>
+					<a href="Design.html#Semiconductor"    class="w3-bar-item menu w3-button cap">Semiconductor</a>
+					<a href="Design.html#MolecularBiology" class="w3-bar-item menu w3-button cap">Molecular Biology</a></div>
 				<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
 				<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
 				<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
@@ -32,7 +37,7 @@
 	</div>
 </div>
 <script src="jq.js"></script><script>Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}</script>
-<center><div style="width:650;padding-top:40">
+<center><div style="width:750;padding-top:40">
 <div class="c_ a">
 	<img class="_ up" src="img/up.jpg">
 	<img class="_ up-left" src="img/upleft.jpg">
@@ -255,7 +260,7 @@
 </div>
 </div>
 <style>
-.c_{float: left; min-height:1;width: 130; height:130;position: relative}
+.c_{float: left; min-height:1; width: 150; height: 150; position: relative}
 ._ {position: absolute; top: 0; left: 0; width: 100%; z-index: 0}
 .front      {z-index: 1}
 </style>
