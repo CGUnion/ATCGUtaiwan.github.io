@@ -264,20 +264,20 @@
 .front      {z-index: 1}
 </style>
 <script src="jq.js"></script><script>
-function  _(_){
+_=(_)=>{
 	this.imageTop    = $("."+_+">._").offset().top ;
 	this.imageLeft   = $("."+_+">._").offset().left;
 	this.imageRight  = this.imageLeft + $("."+_+">._").width ();
 	this.imageBottom = this.imageTop  + $("."+_+">._").height();
 	this._ = function(){
 		$("."+_+">._").css("z-index","0"); pos =
-		(X >= this.imageLeft  && Y <= this.imageTop   && X <= this.imageRight)?'up':
+		(X >= this.imageLeft  && Y <= this.imageTop    && X <= this.imageRight)?'up':
 		(X <  this.imageLeft  && Y <  this.imageTop)?'up-left':
-		(X <= this.imageLeft  && Y <= this.imageBottom&& Y >= this.imageTop)?'left':
+		(X <= this.imageLeft  && Y <= this.imageBottom && Y >= this.imageTop )?'left':
 		(X <  this.imageLeft  && Y >  this.imageBottom)?'down-left':
-		(X <= this.imageRight && Y >= this.imageBottom&& X >= this.imageLeft)?'down':
+		(X <= this.imageRight && Y >= this.imageBottom && X >= this.imageLeft)?'down':
 		(X >  this.imageRight && Y >  this.imageBottom)?'down-right':
-		(X >= this.imageRight && Y >= this.imageTop && Y <= this.imageBottom)?'right':
+		(X >= this.imageRight && Y >= this.imageTop && Y <= this.imageBottom )?'right':
 		(X >  this.imageRight && Y <  this.imageTop)?'up-right':'front';
 		$("."+_+">."+pos).css("z-index","1");
 	};
