@@ -265,12 +265,12 @@
 </style>
 <script src="jq.js"></script><script>
 function _(_){
-	this.imageTop    = $("."+_+">._").offset().top ;
-	this.imageLeft   = $("."+_+">._").offset().left;
-	this.imageRight  = this.imageLeft + $("."+_+">._").width ();
-	this.imageBottom = this.imageTop  + $("."+_+">._").height();
-	this._ = ()=>{
-		$("."+_+">._").css("z-index","0"); pos =
+	this.imageTop   = $("."+_+">._").offset().top ;
+	this.imageLeft  = $("."+_+">._").offset().left;
+	this.imageRight = this.imageLeft + $("."+_+">._").width ();
+	this.imageBottom= this.imageTop  + $("."+_+">._").height();
+	this._		=()=>{$("."+_+">._").css("z-index","0");
+		pos =
 		(X >= this.imageLeft  && Y <= this.imageTop    && X <= this.imageRight)?'up':
 		(X <  this.imageLeft  && Y <  this.imageTop)?'up-left':
 		(X <= this.imageLeft  && Y <= this.imageBottom && Y >= this.imageTop )?'left':
