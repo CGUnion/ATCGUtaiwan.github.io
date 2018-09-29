@@ -269,7 +269,7 @@ function _(_){
 	this.imageLeft   = $("."+_+">._").offset().left;
 	this.imageRight  = this.imageLeft + $("."+_+">._").width ();
 	this.imageBottom = this.imageTop  + $("."+_+">._").height();
-	this._ = function(){
+	this._ = ()=>{
 		$("."+_+">._").css("z-index","0"); pos =
 		(X >= this.imageLeft  && Y <= this.imageTop    && X <= this.imageRight)?'up':
 		(X <  this.imageLeft  && Y <  this.imageTop)?'up-left':
