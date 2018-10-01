@@ -47,9 +47,26 @@
 	<div class="w3-col l9 m7 s12 w3-right">
 		<div class="pt" id="Idea"></div>
 		<h2>Idea</h2><hr>
-		<center><img src="15.PNG" style="height=300"></center>
-		<center><img src="123.jpg"></center>
-		
+		<div class="w3-content w3-section" style="max-width:500px">
+		<img class="mySlides: src="15.PNG" style="width:100%>
+		<img class="mySlides: src="123.jpg" style="width:100%>
+		</div>
+		<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 		<div class="pt" id="Design"></div>
 		<h2>Design</h2><hr>
 		<p>In the future, the most threatening enemy of human medical science may not be cancer. It is the product of gene mutation, multi-drug resistance gene. Today, the detecting chips that are designed by our team are the products withstanding multi-drug resistance gene. With rapid changing environment and abusing of antibiotic, the speed of bacteria gene mutation surpasses human’s imagination. For example, the gene of MSSA is induced to mecA by antibiotic becoming the new type strain, MRSA. We use this model to combine conduct electricity and DNA specificity hybridization to achieve the fast and saving cost way to screen the sample.</p>
