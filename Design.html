@@ -37,7 +37,7 @@
 </div>
 <div class="w3-animate-opacity page" style="margin:0 10%">
 	<div class="w3-col l2 m3 w3-card-4 w3-sidebar w3-bar-block w3-hide-small w3-animate-zoom w3-center" style="top:80;height:80vh">
-		<img class="w3-image w3-padding" src="logo.ico" style="width:80%">
+		<br><img class="w3-image w3-padding" src="logo.ico" style="width:80%">
 		<h1>Design</h1>
 		<a href="#Idea"   class="w3-bar-item menu w3-button w3-medium cap">Idea</a>
 		<a href="#Design" class="w3-bar-item menu w3-button w3-medium cap">Design</a>
@@ -60,12 +60,8 @@
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
+plusDivs=(n)=>{showDivs(slideIndex += n);}
+showDivs=(n)=>{
   var i;
   var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {slideIndex = 1}    
