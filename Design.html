@@ -49,12 +49,13 @@
 		<div class="pt" id="Idea"></div>
 		<h2>Idea</h2><hr>
 		<div class="w3-content w3-section" style="max-width:500px">
-  <center><img class="mySlides" src="15.PNG" style="height:300"><img class="mySlides" src="123.jpg" style="height:300"></center>
+			<img class="mySlides" src="15.PNG" style="height:300">
+  <center><img class="mySlides" src="123.jpg" style="height:300"></center>
 </div>
 
 <script>
 myIndex = 0; carousel();
-carousel=()=>{
+function carousel(){
 	x = document.getElementsByClassName("mySlides");
 	for (i = 0; i < x.length; i++) x[i].style.display = "none";
 	myIndex++;
