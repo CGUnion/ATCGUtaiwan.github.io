@@ -35,23 +35,28 @@
 		</div>
 	</div>
 </div>
-<div class="w3-animate-opacity" style="margin:0 10%">
-	<div class="w3-col l2 m3 w3-card-4 w3-sidebar w3-bar-block w3-hide-small w3-animate-zoom w3-center" style="top:80;height:80vh">
-		<br><img class="w3-image w3-padding" src="logo.ico" style="width:80%">
+<div class="w3-animate-opacity">
+	<div class="w3-col l2 m3 w3-card-4 w3-sidebar w3-bar-block w3-hide-small w3-animate-zoom w3-center" style="top:80;left:80;height:80vh">
+		<br><img class="w3-image w3-padding" src="logo.ico" style="width:80%">	
 		<a href="Lab.html"              class="w3-bar-item w3-button cap"><h1>Lab</h1></a>
-		<a href="MolecularBiology.html" class="w3-bar-item w3-button w3-medium cap">Molecular Biology</a>
-		<a href="Semiconductor.html"    class="w3-bar-item w3-button w3-medium cap">Semiconductor    </a>
-		<a href="Detection.html"        class="w3-bar-item w3-button w3-medium cap">Detection        </a>
+		<a href="Semiconductor.html" class="w3-bar-item w3-button w3-medium cap">Semiconductor</a>
+		<a href="#Introduction" class="w3-bar-item w3-button w3-medium cap">Introduction</a>
+		<a href="#Experiment  " class="w3-bar-item w3-button w3-medium cap">Experiment  </a>
+		<a href="#Discussion  " class="w3-bar-item w3-button w3-medium cap">Discussion  </a>
+		<a href="#Conclusion  " class="w3-bar-item w3-button w3-medium cap">Conclusion  </a>
 	</div>
+	<div>
 	<div class="w3-col l9 m7 s12 w3-right">
 		<div style="height:50"></div>
 		<div class="w3-animate-opacity">
 			<h1 class="w3-center">Detection</h1><hr>
+			<div class="pt" id="Introduction"></div>			
 			<h2>Introduction</h2>
-			<p>Cyclic voltammetry is a method of changing the potential to obtain the direction of the redox current. Mainly by applying a cyclic potential, from a starting potential to a terminal potential at a fixed rate, and then changing back to the starting potential at the same rate, thereby drawing a CV of a reversible oxidation reactant analysis for the cycle. By measuring the value of the original electrode material and the change in the value of the connected DNA material, it can be determined that the electrode is connected to the probe.</p>			
+			<p>Cyclic voltammetry is a method of changing the potential to obtain the direction of the redox current. Mainly by applying a cyclic potential, from a starting potential to a terminal potential at a fixed rate, and then changing back to the starting potential at the same rate, thereby drawing a CV of a reversible oxidation reactant analysis for the cycle. By measuring the value of the original electrode material and the change in the value of the connected DNA material, it can be determined that the electrode is connected to the probe.</p>
+			<div class="pt" id="Experiment"></div>
 			<h2>Experiment</h2>
 			<ul>
-				<li><h3>DNA-probe immobilization </h3></li>					
+				<li><h3>DNA-probe immobilization</h3></li>
 				<li><h3>DNA-target hybridization</h3></li>
 			</ul>
 			<h4>*target DNA concentration vs probe DNA concentration</h4>
@@ -59,9 +64,16 @@
 			<h5>1000↑bp</h5>
 			<h5>1000bp</h5>
 			<h5>1000↓bp</h5>
-			<h5>Genomic DNA (positive vs negative)</h5>					
+			<h5>Genomic DNA (positive vs negative)</h5>
+			<div class="pt" id="Discussion"></div>
 			<h2>Discussion</h2>
+			<div class="pt" id="Conclusion"></div>
 			<h2>Conclusion</h2>
-		</div>
+		</div></div>
+		<div class="w3-center w3-padding w3-col l12" style="color:#dac2c2;background-color:#464646"> © Copyright 2018 @CGU </div>
 	</div>
 </div>
+<script src="jq.js"></script><script>
+	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
+	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
+</script>
