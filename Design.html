@@ -54,14 +54,13 @@
 </div>
 
 <script>
-myIndex = 0; carousel();
-function carousel(){
+myIndex = 0; c();
+function c(){
 	x = document.getElementsByClassName("mySlides");
 	for (i = 0; i < x.length; i++) x[i].style.display = "none";
-	myIndex++;
-	if (myIndex > x.length) myIndex = 1
+	if (++myIndex > x.length) myIndex = 1;
 	x[myIndex-1].style.display = "block";
-	setTimeout(carousel, 2000); // Change image every 2 seconds
+	setTimeout(c, 5000); // Change image every 5 seconds
 }
 </script>
 		<div class="pt" id="Concept"></div>
