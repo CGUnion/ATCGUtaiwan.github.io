@@ -11,26 +11,28 @@
 			<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small cap"             href="Sponsors.html">Sponsors</a>
 		</div>
 	</center>
-	<div class="w3-hide-large w3-hide-medium">
+	<div class="w3-hide-large w3-hide-medium w3-dropdown-hover">
 		<a href="Home.html" class="w3-bar-item w3-button w3-large w3-pale-red">Home</a>
 		<div class="w3-right w3-dropdown-click">
-			<a href="#" onclick="Acc('dc1')" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
-			<div id="dc1" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
-				<a href="#" onclick="Acc('dc2')" class="w3-bar-item w3-button w3-medium cap">Project</a>
-				<div id="dc2" class="w3-hide w3-light-grey">
-					<a href="Project.html#Background" class="w3-bar-item menu w3-button cap">Background</a>
-					<a href="Project.html#Problem   " class="w3-bar-item menu w3-button cap">Problem   </a>
-					<a href="Project.html#Goal      " class="w3-bar-item menu w3-button cap">Goal      </a>
-					<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future    </a></div>		
-				<a href="#" onclick="Acc('dc3')" class="w3-bar-item w3-button w3-medium cap">Design</a>
-				<div id="dc3" class="w3-hide w3-light-grey">
-					<a href="Design.html#Idea"             class="w3-bar-item menu w3-button cap">Idea</a>
-					<a href="Design.html#Design"           class="w3-bar-item menu w3-button cap">Design</a>
-					<a href="Design.html#Semiconductor"    class="w3-bar-item menu w3-button cap">Semiconductor</a>
-					<a href="Design.html#MolecularBiology" class="w3-bar-item menu w3-button cap">Molecular Biology</a></div>
-				<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
-				<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
-				<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
+			<a href="#" class="w3-bar-item w3-button"><img src="logo.ico" style="width:100%;max-width:27"></a>
+			<div class="w3-dropdown-content">
+				<div id="dc1" class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+					<a href="#" onclick="Acc('dc2')" class="w3-bar-item w3-button w3-medium cap">Project</a>
+					<div id="dc2" class="w3-hide w3-light-grey">
+						<a href="Project.html#Background" class="w3-bar-item menu w3-button cap">Background</a>
+						<a href="Project.html#Problem   " class="w3-bar-item menu w3-button cap">Problem</a>
+						<a href="Project.html#Goal      " class="w3-bar-item menu w3-button cap">Goal</a>
+						<a href="Project.html#Future    " class="w3-bar-item menu w3-button cap">Future</a></div>
+					<a href="#" onclick="Acc('dc3')" class="w3-bar-item w3-button w3-medium cap">Design</a>
+					<div id="dc3" class="w3-hide w3-light-grey">
+						<a href="Design.html#Idea"             class="w3-bar-item menu w3-button cap">Idea</a>
+						<a href="Design.html#Design"           class="w3-bar-item menu w3-button cap">Design</a>
+						<a href="Design.html#Semiconductor"    class="w3-bar-item menu w3-button cap">Semiconductor</a>
+						<a href="Design.html#MolecularBiology" class="w3-bar-item menu w3-button cap">Molecular Biology</a></div>
+					<a href="Lab.html"      class="w3-bar-item menu w3-button w3-medium cap">Lab     </a>
+					<a href="Team.html"     class="w3-bar-item menu w3-button w3-medium cap">Team    </a>
+					<a href="Sponsors.html" class="w3-bar-item menu w3-button w3-medium cap">Sponsors</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -39,9 +41,24 @@
 	<div class="w3-col l2 m3 w3-card-4 w3-sidebar w3-bar-block w3-hide-small w3-animate-zoom w3-center" style="top:80;left:80;height:80vh">
 		<br><img class="w3-image w3-padding" src="logo.ico" style="width:80%">	
 		<a href="Lab.html"              class="w3-bar-item w3-button cap"><h1>Lab</h1></a>
-		<a href="MolecularBiology.html" class="w3-bar-item w3-button w3-medium cap">Molecular Biology</a>
-		<a href="Semiconductor.html"    class="w3-bar-item w3-button w3-medium cap">Semiconductor    </a>
-		<a href="Detection.html"        class="w3-bar-item w3-button w3-medium cap">Detection        </a>
+		<a href="#" onclick="Acc('dc4')" class="w3-bar-item w3-button w3-large cap">Molecular Biology</a>
+				<div id="dc" class="w3-light-grey w3-show">
+					<a href="MolecularBiology.html#Introduction" class="w3-button w3-medium w3-half cap">Introduction</a>
+					<a href="MolecularBiology.html#Experiment  " class="w3-button w3-medium w3-half cap">Experiment  </a>
+					<a href="MolecularBiology.html#Discussion  " class="w3-button w3-medium w3-half cap">Discussion  </a>
+					<a href="MolecularBiology.html#Conclusion  " class="w3-button w3-medium w3-half cap">Conclusion  </a></div>
+		<a href="#" onclick="Acc('dc5')" class="w3-bar-item w3-button w3-large cap">Semiconductor</a>
+				<div id="dc" class="w3-light-grey w3-show">
+					<a href="MSemiconductor.html#Introduction" class="w3-button w3-medium w3-half cap">Introduction</a>
+					<a href="MSemiconductor.html#Experiment  " class="w3-button w3-medium w3-half cap">Experiment  </a>
+					<a href="MSemiconductor.html#Discussion  " class="w3-button w3-medium w3-half cap">Discussion  </a>
+					<a href="MSemiconductor.html#Conclusion  " class="w3-button w3-medium w3-half cap">Conclusion  </a></div>
+		<a href="#" onclick="Acc('dc6')" class="w3-bar-item w3-button w3-large cap">Detection</a>
+				<div id="dc" class="w3-light-grey w3-show">
+					<a href="Detection.html#Introduction" class="w3-button w3-medium w3-half cap">Introduction</a>
+					<a href="Detection.html#Experiment  " class="w3-button w3-medium w3-half cap">Experiment  </a>
+					<a href="Detection.html#Discussion  " class="w3-button w3-medium w3-half cap">Discussion  </a>
+					<a href="Detection.html#Conclusion  " class="w3-button w3-medium w3-half cap">Conclusion  </a></div>
 	</div>
 	<div>
 	<img src="FF2.png" usemap="#I02" style="height:100%;padding-top:30">
