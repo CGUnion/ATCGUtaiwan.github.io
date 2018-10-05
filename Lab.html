@@ -61,42 +61,11 @@
 	<div>
 		<center><img src="FF2.png" usemap="#I02" style="width:100%;max-width:700;padding-top:50"></center>
 		<map name="I02">
-			<area shape="rect" na="1" coords="200,  0,400,300" href="MolecularBiology.html">
+			<area shape="circle" na="1" coords="200,150,100" href="MolecularBiology.html">
 			<area shape="rect" na="2" coords="100,200,250,350" href="Semiconductor.html"   >
 			<area shape="rect" na="3" coords="600,  0,900,550" href="Detection.html"       >
 		</map>
-		<style> #mapster_wrap_0 {margin: 0 auto;}</style>
-		<script src="jquery.imagemapster.js"></script><script>
-		var resizeTime  = 100, resizeDelay = 100; 
-		$('img').mapster({mapKey: 'na', clickNavigate: true});
-		function resize(maxWidth,maxHeight) {
-			var image     = $('img'),
-			    imgWidth  = image.width(),
-			    imgHeight = image.height(),
-			    newWidth  = 0,
-			    newHeight = 0;
-			if (imgWidth/maxWidth>imgHeight/maxHeight)
-				newWidth  = maxWidth;
-			else	newHeight = maxHeight;
-			image.mapster('resize',newWidth,newHeight,resizeTime);   
-		}
-		function onWindowResize() {
-			var curWidth  = $(window).width(),
-			    curHeight = $(window).height(),
-			    checking=false;
-			if (checking) return;
-			checking = true;
-			window.setTimeout(function() {
-				var newWidth  = $(window).width(),
-				    newHeight = $(window).height();
-				if (newWidth === curWidth && newHeight === curHeight)
-					resize(newWidth,newHeight);
-				checking = false;
-			},resizeDelay );
-		}
-		$(window).bind('resize',onWindowResize);
-		</script>
-</div>
+	</div>
 <div class="w3-center w3-padding w3-col" style="color:#dac2c2;background-color:#464646"> © Copyright 2018 @CGU </div>
 <script src="jq.js"></script><script>
 	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
