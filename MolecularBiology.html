@@ -57,7 +57,7 @@
 			<h2>Introduction</h2>
 			<h3><li>USA300<span style="margin-left:3%"><a style="cursor:pointer" onclick="w3m.style.display='block'"><img src="bridge.png" style="width:150"></a></span></li></h3>
 			<div id="w3m" class="w3-modal">
-				<div class="w3-padding w3-modal-content w3-animate-top w3-card-4" style="height:calc(100% - 38px)">
+				<div class="w3-padding w3-modal-content w3-animate-top w3-card-4" style="overflow:scroll;height:calc(100% - 38px)">
 					<span onclick="w3m.style.display='none'" class="w3-button w3-display-topright">×</span>
 					<h1>Usa 300的流行病學</h1><hr>
 					<p>The community-associated MRSA strain USA300, which nearly always carries genes for the Panton-Valentine leukocidin (PVL) and the staphylococcal cassette chromosome mec (SCCmec) type IV, became the predominant strain type of MRSA circulating in the United States by 2011. Community-associated MRSA infections, defined as infections in patients who lacked recent exposure to the health care setting, disproportionately affected children , incarcerated populations, underserved urban populations, and other specific groups . Early US reports on community-associated MRSA infections were published from Houston , Chicago and elsewhere in the Midwest like Minnesota , Tennessee , Hawaii , and California. Soon after it began spreading in the community, USA300 became a common cause of infections in the health care setting as well, blurring the epidemiologic distinction between community-associated and health care–associated MRSA.</p>
@@ -68,13 +68,56 @@
 				</div>
 			</div>
 			<p> Methicillin-resistant Staphylococcus aureus (MRSA) is a major pathogen in hospitals and the community. It causes a wide range of infections affecting the superficial skin and soft tissue, as well invasive infections including pneumonia, bloodstream infections, bone and joint infections.</p>
-			<h3><li>Specificity(30 vs 999)</h3></li>
+			<h3><li>Specificity(30 vs 999)</li></h3>
 			<p> With a single electrode, DNA biosensor can detect a DNA fragment of only 16-30 mer, as limited by the length of probe. However, based on the properties that electrons can be transferred through the DNA, we use two electrodes which binding the same length of probe as single electrode. It can detect more than 1000 mer by analyzing the conductance. Besides, the target DNA needs to hybridize with two different probes to let electrons be transferred through the DNA.</p>			
 			<div class="pt" id="Experiment"></div>
 			<h2>Experiment</h2>
-			<h3><li>Preparation of the Target DNA</h3></li>
+			<h3><li>Preparation of the Target DNA</li></h3>
 			<ul>
-				<li><h4>Genomic DNA Extraction</h4></li>
+				<h4><li>Genomic DNA Extraction<span style="margin-left:3%"><a style="cursor:pointer" onclick="w3m2.style.display='block'"><img src="bridge.png" style="width:150"></a></span></li></h4>
+			<div id="w3m2" class="w3-modal">
+				<div class="w3-padding w3-modal-content w3-animate-top w3-card-4" style="overflow:scroll;height:calc(100% - 38px)">
+					<span onclick="w3m2.style.display='none'" class="w3-button w3-display-topright">×</span>
+					<h1>Genomic dna extraction</h1><hr>
+<h3>Preprocess</h3>
+<ol>
+    <li>Alter 1 ml USA300 culture to 1.5 ml microcentrifuge tube</li>
+    <li>Centrifuge at 13000 rpm for 1 minutes at 25 ℃</li>
+    <li>Add 100 ul TE buffer to the tube and pipetting the pellet</li>
+    <li>Add  20 ul [100 mg/ml lysozyme and 10 mg/ml lysostaphin]</li>
+    <li>Put in the 37 ℃ incubator for 60 minutes and gently shake it every 10 minutes</li>
+</ol>
+<h3>Cell lysis</h3>
+<ol>
+    <li>Add 300 ul cell lysis buffer</li>
+    <li>Put in the 60 ℃ incubator and gently shake it every 3 minutes, and cool down for 5 minutes</li>
+</ol>
+<h3>RNA removal</h3>
+<ol>
+    <li>Add 1.5 ul RNase A and put at room temperature for 5 minutes</li>
+</ol>
+<h3>Protein removal</h3>
+<ol>
+    <li>Add 100 ul protein remove buffer</li>
+    <li>Put it on the ice for 10 minutes and precool the centrifuge</li>
+    <li>Centrifuge at 13000 rpm for 10 minutes at 4 ℃</li>
+</ol>
+<h3>DNA precipitation</h3>
+<ol>
+    <li>Place the supernatant to a new 1.5 ml microcentrifuge tube</li>
+    <li>Add 300 ul isopropanol</li>
+    <li>Centrifuge at 13000 rpm for 5 minutes at 4 ℃</li>
+    <li>Add 300 ul 70% ethanol</li>
+    <li>Centrifuge at 13000 for 3 minutes at 25 ℃</li>
+    <li>Drain the ethanol at vacuum environment</li>
+</ol>
+<h3>DNA rehydration</h3>
+<ol>
+    <li>Add 100 ul DNA hydration buffer</li>
+    <li>Put in the 60 ℃ incubator for 60 minutes</li>
+</ol>
+				</div>
+			</div>				
 				<img src="dna e.jpg">
 				<p> Before we extraction the genomic DNA of our choice, we need to culture the bacteria first. We transfer the bacteria culture to the 40 ml centrifuge tube and culture it overnight ( 16-18 hours ). Alter 1 ml bacteria culture to 1.5 ml microcentrifuge tube, then centrifuge at 1000 rpm at 25 ℃ for 1 minute. Add 100 ul TE buffer to the tube and pipetting the pellet until there is no suspension. Add 20 ul 100 mg/ml lysozyme and 10 mg/ml lysostaphin mixture to the tube then put the tube into the 37 ℃ incubator for 60 minutes and gently shake it every 10 minutes.</p>
 				<p>After taking out, add 300 ul cell lysis buffer to break the cell membrane and put in the 60 ℃ incubator and gently shake it every 3 minutes, and cool down for 5 minutes. Add 1.5 ul RNase A and put at room temperature for 5 minutes to remove the RNA. Add 100 ul protein remove buffer and put it on the ice for 10 minutes and precool the centrifuge for 10 minutes too. Centrifuge at 13000 rpm for 10 minutes at 4 ℃</p>
