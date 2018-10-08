@@ -65,5 +65,5 @@
 <script src="jquery.map-trifecta.min.js"></script><script>
 	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
 	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
-	$(document).ready(function(e) {$('img[usemap]').mapTrifecta();});}
+	$("img[usemap]").mapTrifecta();
 </script>
