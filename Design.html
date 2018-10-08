@@ -43,11 +43,11 @@
 		<p>Our project <b>"bri<font color = "red">D</font>ge a<font color = "red">N</font> er<font color = "red">A</font>"</b> was inspired by Genesis which is a fresco painting by Michelangelo. One of most famous painting among Genesis, The Creation of Adam give us different idea. Since Adam's finger and God's finger are not touching, we want to build a bridge that will allow them to get in touch with each other. In addition, we hope that <b>"bri<font color = "red">D</font>ge a<font color = "red">N</font> er<font color = "red">A</font>"</b> will build a bridge between our era and the next era.</p>
 <script>
 myIndex = 0; c();
-function c(){
+c=()=>{
 	x = document.getElementsByClassName("mySlides");
 	for (i = 0; i < x.length; i++) x[i].style.display = "none";
-	if (++myIndex > x.length) myIndex = 1;
-	x[myIndex-1].style.display = "block";
+	if (++myIndex >= x.length) myIndex = 0;
+	x[myIndex].style.display = "block";
 	setTimeout(c, 5000); // Change image every 5 seconds
 }
 </script>
