@@ -1,14 +1,14 @@
 <title> ATCGU </title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content="iFrame message passing test">
-<link rel ="stylesheet" href="map-trifecta.css"><link rel ="stylesheet" href="a.css"><link rel ="shortcut icon" href="logo.ico">
+<link rel ="stylesheet" href="a.css"><link rel ="shortcut icon" href="logo.ico">
 <div class="w3-top w3-show-inline-block w3-white w3-card" style="z-index:2">
 	<div class="w3-hide-small w3-center">
-		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small"             href="Home.html"    >Home    </a>
-		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small"             href="Project.html" >Project </a>
-		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small"             href="Design.html"  >Design  </a>
-		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small w3-pale-red" href="Lab.html"     >Lab     </a>
-		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small"             href="Team.html"    >Team    </a>
-		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small"             href="Sponsors.html">Sponsors</a>
+		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small" href="Home.html"    >Home    </a>
+		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small" href="Project.html" >Project </a>
+		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small" href="Design.html"  >Design  </a>
+		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small  w3-pale-red" href="Lab.html"     >Lab     </a>
+		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small" href="Team.html"    >Team    </a>
+		<a style="width:99" class="w3-bar-item menu w3-button w3-medium w3-padding-small" href="Sponsors.html">Sponsors</a>
 	</div>
 	<div class="w3-hide-large w3-hide-medium">
 		<a href="Home.html" class="w3-bar-item w3-button w3-large w3-pale-red">Home</a>
@@ -43,8 +43,4 @@
 		</center>
 	</div>
 <div class="w3-center w3-padding w3-col" style="color:#dac2c2;background-color:#464646"> © Copyright 2018 @CGU </div>
-<script src="jq.js"></script><script src="imr.js"></script><script>
-	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");}
-	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});
-	$('map').imageMapResize();
-</script>
+<script src="jq.js"></script><script src="imr.js"></script><script>Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "");};$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700);});$('map').imageMapResize();</script>
