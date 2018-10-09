@@ -2,7 +2,7 @@
 ::-webkit-scrollbar             {width:         8px}
 ::-webkit-scrollbar-track       {border-radius: 8px}
 ::-webkit-scrollbar-thumb       {border-radius: 8px;background: #888;}
-//::-webkit-scrollbar-thumb:hover {background:   #fff}
+/* ::-webkit-scrollbar-thumb:hover {background:   #fff} */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 body{color:#464646;line-height:1.5;word-wrap:break-word;}
