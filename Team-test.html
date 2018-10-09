@@ -8,6 +8,6 @@
 		"lhs/down.png     ",
 		"lhs/downright.png",
 		"lhs/right.png    ",
-		"lhs/upright.png  "]; i = 0; setInterval(()=>{lhs.setAttribute("src", _img[i < _img.length? i++ : 1])}, 1000);
+		"lhs/upright.png  "]; i = 0; setInterval(()=>{lhs.src = _img[i < _img.length? i++ : 0]}, 1000);
 </script>
 <img id="lhs" style="w3-col l3">
