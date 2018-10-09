@@ -8,7 +8,6 @@
 		"wyl/down.png     ",
 		"wyl/downright.png",
 		"wyl/right.png    ",
-		"wyl/upright.png  "];
-	i = 0; setInterval(()=>{wyl.setAttribute("src", wyl_img[i === wyl_img.length ? 0 : i++])}, 1000);
+		"wyl/upright.png  "]; i = 0; setInterval(()=>{wyl.setAttribute("src", wyl_img[i < wyl_img.length? i++ : 1])}, 1000);
 </script>
 <img id="wyl" style="w3-half">
