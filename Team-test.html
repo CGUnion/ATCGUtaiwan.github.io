@@ -1,7 +1,7 @@
 <img src="left.ico" style="margin-top:40" class="w3-col l2 m3 w3-hide-small w3-left">
 <center>
 	<div style="width:750;padding-top:40">
-<script>i = 0; setInterval(()=>{wyl.setAttribute("src", wyl_img[i < wyl_img.length ? i++ : 0])}, 1000); wyl_img = [
+<script>	 wyl_img = [
 		"wyl/front.png    ",
 		"wyl/up.png       ",
 		"wyl/upleft.png   ",
@@ -10,7 +10,7 @@
 		"wyl/down.png     ",
 		"wyl/downright.png",
 		"wyl/right.png    ",
-		"wyl/upright.png  "];
+		"wyl/upright.png  "]; i = 0; setInterval(()=>{wyl.setAttribute("src", wyl_img[i === wyl_img.length ? 0 : i++])}, 1000);
 </script>
 			<img id="wyl">
 		<div class="c_ b">
