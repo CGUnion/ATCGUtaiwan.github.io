@@ -27,9 +27,8 @@
 <script>
 window.onload = window.onresize = (()=>{ X = 0;Y = 0})
 window.onmousemove = ((_)=>{X = _.pageX; Y = _.pageY})
-$=(_)=>document.getElementById(_)
-_=(_)=>{id = [
-	$("n00"), $("n01"), $("n02"), $("n03"), $("n04"), $("n05"), $("n06"), $("n07"), $("n08"), $("n09"),
+$=(_)=>document.getElementById(_);_=(_)=>{
+id = [	$("n00"), $("n01"), $("n02"), $("n03"), $("n04"), $("n05"), $("n06"), $("n07"), $("n08"), $("n09"),
 	$("n10"), $("n11"), $("n12"), $("n13"), $("n14"), $("n15"), $("n16"), $("n17"), $("n18"), $("n19")]
 	for(i = 0; i < id.length; i++){
 		左 = id[i].offsetLeft
