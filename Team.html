@@ -262,7 +262,7 @@ function _(className){
     this.右 = this.左 + $("."+className+">.head-image").width();
     this.上 = $("."+className+">.head-image").offset().top;
     this.下 = this.上 + $("."+className+">.head-image").height();
-    this._           = ()=>{
+    this._  = ()=>{
 	    $("."+className+">.head-image").css("z-index","0");
 	    $("."+className+">."+(
 		    (X >= this.左 && Y <= this.上 && X <= this.右)?'up':
