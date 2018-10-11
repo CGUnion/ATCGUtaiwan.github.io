@@ -22,8 +22,8 @@
 		</div>
 	</div>
 </div>
-<div style="height:100%;margin-top: 40" class="w3-col l2 w3-hide-medium w3-hide-small w3-left "><img src= "left.ico"></div>
-<div style="height:100%;margin-top:540" class="w3-col l2 w3-hide-medium w3-hide-small w3-right"><img src="right.ico"></div>
+<div style="position:fixed;top:  30; left:0" class="w3-col l2 w3-hide-medium w3-hide-small"><img src="left.ico"></div>
+<div style="position:fixed;bottom:0;right:0" class="w3-col l2 w3-hide-medium w3-hide-small"><img src="right.ico"></div>
 <script>
 window.onload = window.onresize = (()=>{ X = 0;Y = 0})
 window.onmousemove = ((_)=>{X = _.pageX; Y = _.pageY})
@@ -49,7 +49,7 @@ _=(_)=>{id = [
 }
 </script>
 <center onmousemove="_(event)">
-<div style="padding:50 0;height:calc(100% - 50);max-width:1000">
+<div style="padding:40 0;max-width:1100">
 	<img id="n00" style="width:180;margin:10" src="wyl/front.png">
 	<img id="n01" style="width:180;margin:10" src="yjm/front.png">
 	<img id="n02" style="width:180;margin:10" src="img/front.png">
