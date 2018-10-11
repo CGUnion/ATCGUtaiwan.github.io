@@ -36,7 +36,7 @@ _=(_)=>{id = [
 		右 = id[i].width    + 左
 		上 = id[i].offsetTop
 		下 = id[i].height   + 上
-		id[i].src = ""+ "wylyjmimgsjcimgtchlyclyplsshylafaimgypmcjhlhllhscj2imgctcchy".slice(i*3,(i+1)*3) + (
+		id[i].src = "wylyjmimgsjcimgtchlyclyplsshylafaimgypmcjhlhllhscj2imgctcchy".slice(i*3,(i+1)*3) + (
 		X >= 左 && Y <= 上 && X <= 右 ?"/up":
 		X <  左 && Y <  上            ?"/upleft":
 		X <= 左 && Y <= 下 && Y >= 上 ?"/left":
