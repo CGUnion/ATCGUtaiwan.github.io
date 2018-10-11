@@ -257,23 +257,23 @@
 </style>
 
 <script src="jq.js"></script><script>
-function _(_){
-	this.imageTop   = $("."+_+">._").offset().top ;
-	this.imageLeft  = $("."+_+">._").offset().left;
-	this.imageRight = this.imageLeft + $("."+_+">._").width ();
-	this.imageBottom= this.imageTop  + $("."+_+">._").height();
-	this._		=()=>{$("."+_+">._").css("z-index","0");
-		pos =
-		(X >= this.imageLeft  && Y <= this.imageTop    && X <= this.imageRight)?'up':
-		(X <  this.imageLeft  && Y <  this.imageTop)?'up-left':
-		(X <= this.imageLeft  && Y <= this.imageBottom && Y >= this.imageTop )?'left':
-		(X <  this.imageLeft  && Y >  this.imageBottom)?'down-left':
-		(X <= this.imageRight && Y >= this.imageBottom && X >= this.imageLeft)?'down':
-		(X >  this.imageRight && Y >  this.imageBottom)?'down-right':
-		(X >= this.imageRight && Y >= this.imageTop && Y <= this.imageBottom )?'right':
-		(X >  this.imageRight && Y <  this.imageTop)?'up-right':'front';
-		$("."+_+">."+pos).css("z-index","1");
-	};
+function (className){
+    this.左 = $("."+className+">.head-image").offset().left;
+    this.右 = this.左 + $("."+className+">.head-image").width();
+    this.上 = $("."+className+">.head-image").offset().top;
+    this.下 = this.上 + $("."+className+">.head-image").height();
+    this._           = ()=>{
+	    $("."+className+">.head-image").css("z-index","0");
+	    $("."+className+">."+(
+		    (X >= this.左 && Y <= this.上 && X <= this.右)?'up':
+		    (X <  this.左 && Y <  this.上)                ?'up-left':
+		    (X <= this.左 && Y <= this.下 && Y >= this.上)?'left':
+		    (X <  this.左 && Y >  this.下)                ?'down-left':
+		    (X <= this.右 && Y >= this.下 && X >= this.左)?'down':
+		    (X >  this.右 && Y >  this.下)                ?'down-right':
+		    (X >= this.右 && Y >= this.上 && Y <= this.下)?'right':
+		    (X >  this.右 && Y <  this.上)                ?'up-right':'front')).css("z-index","1");
+    };
 }
 window.onmousemove = ((_)=>{X = _.pageX; Y = _.pageY;  for(i = 0; i < img.length;i++) img[i]._()});
 window.onload = window.onresize = (()=> {X = 0; Y = 0; img = [new _("a"), new _("b"), new _("c"), new _("d"), new _("e"), new _("f"), new _("g"), new _("h"), new _("i"), new _("j"), new _("k"), new _("l"), new _("m"), new _("n"), new _("o"), new _("p"), new _("q"), new _("r"), new _("s"), new _("t")];});
