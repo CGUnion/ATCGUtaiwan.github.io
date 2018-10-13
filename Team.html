@@ -31,10 +31,10 @@ $=(_)=>document.getElementById(_);_=(_)=>{
 id = [  $("n00"), $("n01"), $("n02"), $("n03"), $("n04"), $("n05"), $("n06"), $("n07"), $("n08"), $("n09"),
         $("n10"), $("n11"), $("n12"), $("n13"), $("n14"), $("n15"), $("n16"), $("n17"), $("n18"), $("n19")]
 	for(i =0; i< id.length; i++){
-		左 = id[i].offsetLeft
-		右 = id[i].width    + 左
 		上 = id[i].offsetTop
+		左 = id[i].offsetLeft
 		下 = id[i].height   + 上
+		右 = id[i].width    + 左
 	 id[i].src = "wylyjmimgsjclcstchlyclyplsshylafatctypmcjhlhllhscj2imgctcchy".slice(i*3,(i+1)*3) + (
 		X >= 左 && Y <= 上 && X <= 右 ?"/up":
 		X <  左 && Y <  上            ?"/upleft":
@@ -57,7 +57,7 @@ id = [  $("n00"), $("n01"), $("n02"), $("n03"), $("n04"), $("n05"), $("n06"), $(
 <div style="padding:40 0;max-width:660" class="team">
 	<div class="member"><img id="n00" src="wyl/front-s.png"><center>Mentor      <br>Robert    <br>Y.L. Wang</center></div>
 	<div class="member"><img id="n01" src="yjm/front-s.png"><center>Mentor      <br>Chia-Ming <br>Yang     </center></div>
-	<div class="member"><img id="n02" src="img/front-s.png"></div>
+	<div class="member"><img id="n02" src="img/front.png"></div>
 	<div class="member"><img id="n03" src="sjc/front-s.png"><center>Mentor      <br>Jwu-Ching <br>Shu      </center></div>
 	<div class="member"><img id="n04" src="lcs/front-s.png"><center>Mentor      <br>Chao-Sung <br>Lai      </center></div>
 	<div class="member"><img id="n05" src="tch/front-s.png"><center>Captain     <br>Chi-Hui   <br>Tsao     </center></div>
@@ -72,7 +72,7 @@ id = [  $("n00"), $("n01"), $("n02"), $("n03"), $("n04"), $("n05"), $("n06"), $(
 	<div class="member"><img id="n14" src="lhl/front-s.png"><center>Member      <br>Hui-Lin   <br>Liu      </center></div>
 	<div class="member"><img id="n15" src="lhs/front-s.png"><center>Web Designer<br>Hao-Sheng <br>Lu       </center></div>
 	<div class="member"><img id="n16" src="cj2/front-s.png"><center>Member      <br>Chun-Hui  <br>Chen     </center></div>
-	<div class="member"><img id="n17" src="img/front-s.png"></div>
+	<div class="member"><img id="n17" src="img/front.png"></div>
 	<div class="member"><img id="n18" src="ctc/front-s.png"><center>Member      <br>Cung-Chen <br>Chen     </center></div>
 	<div class="member"><img id="n19" src="chy/front-s.png"><center>Member      <br>Hong-Yi   <br>Chen     </center></div>
 </div>
