@@ -56,17 +56,25 @@ id = [  $("n00"), $("n01"), $("n02"), $("n03"), $("n04"), $("n05"), $("n06"), $(
 }
 [data-title]:after {
     content: attr(data-title);
-    background-color: #00FF00;
-    color: #111;
-    font-size: 150%;
     position: absolute;
-    padding: 1px 5px 2px 5px;
     bottom: -1.6em;
     left: 100%;
-    white-space: nowrap;
-    box-shadow: 1px 1px 3px #222222;
+    padding: 4px 4px 4px 8px;
+    color: #222;
+    white-space: nowrap; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;  
+    -moz-box-shadow: 0px 0px 4px #222;  
+    -webkit-box-shadow: 0px 0px 4px #222;  
+    box-shadow: 0px 0px 4px #222;  
+    background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f8f8f8),color-stop(1, #cccccc));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -ms-linear-gradient(top, #f8f8f8, #cccccc);  
+    background-image: -o-linear-gradient(top, #f8f8f8, #cccccc);
     opacity: 0;
-    border: 1px solid #111111;
     z-index: 99999;
     visibility: hidden;
 }
