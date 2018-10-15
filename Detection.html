@@ -41,21 +41,36 @@
 				<h1 class="w3-center">Detection</h1><hr>
 				<div class="pt" id="Introduction"></div>			
 				<h2>Introduction</h2>
-				<h3><li>Cyclic voltammetry</h3></li>
+				
+				<h3><li>
+				<a style="cursor:pointer" onclick="w3m9.style.display='block'">Cyclic voltammetry</a>
+			<span style="margin-left:3%">
+				<a style="cursor:pointer" onclick="w3m9.style.display='block'"><img src="bridge.png" style="width:150"></a>
+			</span>
+			</h3></li>
+			<div id="w3m9" class="w3-modal">
+				<div class="w3-padding w3-modal-content w3-animate-top w3-card-4 header">
+					<span onclick="w3m9.style.display='none'" class="w3-button w3-display-topright">×</span>
+					<h1>Cyclic voltammetry</h1><hr>
+					<div class="content">
+						<p>Cyclic voltammetry (CV) is a method of applying potential in working electrode (WE) through reference electrode (RE) to obtain the direction of the redox current from a counter electrode (CE). A cyclic scanning procedure is performed from a starting potential to a terminal potential at a fixed scanning rate of bias increasing, and then decreasing bias to the starting potential at the same rate. Therefore a CV curve could be drawn with measured current and its given bias. With the surface status changes including surface immobilization and DNA attachments, clear differences of CV curves could be observed in peak current and peak bias shift.</p>
+					</div>
+				</div>
+			</div>
 				<p>For testing the result, we used cyclic voltammetry as an electrochemistry method.</p>
 				<div class="pt" id="Experiment"></div>
 				
 			        <h2>Experiment</h2>
 			
-				<h3><li>Chip Cleaning</li></h3>
-		                <p>The surface of the gold electrode needs to be modified to hybrid the DNA. After the chip package is completed, electrodes could be cleaned by cyclic voltammetry. The first wash was carried out at 1 M NaOH at a speed of 0.3 V / s in the range -0.2 to + 0.8 V, followed by a second wash in 0.5 M H2SO4 at a speed of 0.3 V / s and a range of -0.25 to + 1.75 V.</p>
+				<h3><li>Surface Cleaning</li></h3>
+		                <p>After the chip package is completed, electrodes could be cleaned by cyclic voltammetry. The first wash was carried out at one M NaOH at a speed of 0.3 V / s in the range -0.two to + 0.8 V, followed by a second wash in 0.5 M H2SO4 at a speed of 0.3 V / s and a range of -0.two5 to + one.75 V.</p>
 			        <h3><li>The connection between Au and DNA probe</h3></li>
 				<center>
 					<img src="５８４.png" class="w3-mobile" style="width:50%">
 					<img src="５８５.png" class="w3-mobile" style="width:50%">
 					<img src="５８３.png" class="w3-mobile" style="width:50%">
 				</center>
-				<p>There are two curves in each plot. The lines in black show the original state of each chip. And the lines in red show the state which was added 0.1/0.01/0.001 uM DNA probe. As figure, there were significant difference between two curves each plot. Descript that DNA were connected to the electrode successfully.</p>
+				<p>There are two curves in each plot. The lines in black show the original state of each chip. And the lines in red show the state which was added 0.1/0.01/0.001 uM probe DNA. As figure, there were significant difference between two curves each plot.</p>
 				<center>
 					<img src="５８６.png" class="w3-mobile" style="width:50%">
                                 	<p>The table show the difference between different concentration of capture probe.</p>
