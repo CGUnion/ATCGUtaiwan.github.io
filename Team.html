@@ -22,8 +22,8 @@
 		</div>
 	</div>
 </div>
-<div style="position:fixed;top:  30; left:0" class="w3-col l2 w3-hide-medium w3-hide-small"><img src="left.ico"></div>
-<div style="position:fixed;bottom:0;right:0" class="w3-col l2 w3-hide-medium w3-hide-small"><img src="right.ico"></div>
+<img class="w3-col l2 w3-hide-medium w3-hide-small" style="position:fixed;top:   0; left:0" src="left.ico">
+<img class="w3-col l2 w3-hide-medium w3-hide-small" style="position:fixed;bottom:0;right:0" src="right.ico">
 <script>
 window.onload = window.onresize = (()=>{ X = 0;Y = 0})
 window.onmousemove = ((_)=>{X = _.pageX; Y = _.pageY})
@@ -53,7 +53,8 @@ img           {display:inline}
 .member       {min-width: 120; width:18%; padding:1%; transition: width 1s}
 .member:hover {min-width: 130; width:20%}
 </style>
-<center onmousemove="_(event)" style="padding:40 22%">
+<p      class="w3-col l2 w3-hide-small"></p>
+<center class="w3-col l8" onmousemove="_(event)" style="padding:40">
 	<img id="n00" class="member" src="wyl/front-s.png" title="Adviser             &#xa;Robert Y.L. Wang">
 	<img id="n01" class="member" src="yjm/front-s.png" title="Adviser             &#xa;Chia-Ming Yang  ">
 	<img id="n02" class="member w3-hide-small" src="logo.ico" title=""                                  >
