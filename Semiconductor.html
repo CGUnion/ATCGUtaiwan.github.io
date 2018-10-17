@@ -1,5 +1,5 @@
 <title> ATCGU </title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel ="stylesheet" href="a.css"><link rel ="shortcut icon" href="logo.ico">
-<style>img{display:inline}</style>
+<style>img{display:inline} video{margin:auto;display:block;width:100%;max-width:800}</style>
 <div class="w3-top w3-show-inline-block w3-white w3-card">
 	<div class="w3-hide-small w3-center">			
 		<a style="width:99;color:#464646" class="w3-bar-item w3-button w3-medium w3-padding-small"             href="Home.html"    >Home    </a>
@@ -87,7 +87,7 @@
 				</header>
 			</div>
 				<p> The way to make the electrodes is to perform the lithography process in the room which the light is yellow. The lithography is to temporarily coat the surface of the chip with photoresist, and design the mask to transfer the design pattern to the photoresist, which is the most important in chip manufacturing.</p>
-	                       	<center><video controls="" style="width:80% padding:0 100;max-width:800"><source src="FF1010.mp4" type="video/mp4"></video></center>
+	                       	<video controls><source src="FF1010.mp4"></video>
 				<p> </p>
                                 <h3><li>
 				<a style="cursor:pointer" onclick="w3m8.style.display='block'">Stacked Electrodes</a>
@@ -106,8 +106,7 @@
 			</div>
 			        <p> As the lithography process is much more difficult to achieve the goal we set earlier. The distance of two electrodes could not be controlled accurately in every finger int the chip. Even 0.1 degree displacement would led the electrodes in the chip with 40 – 50 % error.</p>
 			        <p> Therefore, we used another method, stacking electrode, to test the connection between target and probe DNA instead.</p>
-                                <center><video width="80%";padding-top="100";max-width="800" controls><source src="GRAPHENE ON THE Au.mp4" type="video/mp4"></center></video>
-
+                                <video controls><source src="GRAPHENE ON THE Au.mp4"></video>
 				<div class="pt" id="Discussion"></div><h2>Discussion</h2>
 				<h3><li>The distance between two electrodes</h3></li>
 				 
@@ -124,7 +123,6 @@
 <div class="w3-center w3-col" style="color:#dac2c2;background-color:#464646"> © Copyright 2018 @CGU </div>
 <script src="jq.js"></script><script>
 	$(document).on('click', 'a[href^="#"]', function(event){event.preventDefault(); $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 700)});
-	Acc=(x)=>{x = document.getElementById(x); x.className = x.className.indexOf("w3-show") == -1 ? x.className + " w3-show" : x.className.replace(" w3-show", "")}
 	window.onclick = () => {
 		if (event.target == w3m6) w3m6.style.display = "none";
 		if (event.target == w3m7) w3m7.style.display = "none";
