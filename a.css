@@ -3,7 +3,7 @@
 ::-webkit-scrollbar-track       {border-radius: 8px}
 ::-webkit-scrollbar-thumb       {border-radius: 8px;background: #888;}
 header {height:85%} .content {overflow:scroll;height:calc(100% - 80px)}
-footer {text-align:center;position:fixed;bottom:0;width:100%;color:#dac2c2;background-color:#464646}
+footer {text-align:center;width:100%;color:#dac2c2;background-color:#464646}
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 body{color:#464646;line-height:1.5;word-wrap:break-word;}
